@@ -319,7 +319,7 @@ border: 1px solid #ECECEC;
 }
 
 .modal {
-    position: relative;
+    position: absolute;
     width: 528px;
     height: 581px;
     top: 50%;
@@ -354,6 +354,27 @@ border: 1px solid #ECECEC;
     background-color: #2196F3;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Form in modal */
+
+.modalsa-h {
+    position: relative;
+    margin: 40px 39px 12px 41px;
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: var(--primary-text-color)
+}
+
+.form-field-label {
+    color: var(--secondary-text-color);
+    margin-bottom: 4px;
 }
 
 /* < !-- Блок Списку --> */
