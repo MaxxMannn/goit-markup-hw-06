@@ -239,9 +239,7 @@ background-repeat: no-repeat;
 background-position: center;
 border: 1px solid #ECECEC;
 
-    /* linear-gradient(to right, rgba(47, 48, 58, 0.4)) */
-    text-align: center;
-    
+
     
 }
 .hero-description {
@@ -319,19 +317,27 @@ border: 1px solid #ECECEC;
 }
 
 .modal {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    height: 100%;
+  
+   }
+
+.modal-container {
+    position: relative;
+    padding: 40px;
     width: 528px;
     height: 581px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-    0px 1px 1px rgba(0, 0, 0, 0.14), 
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+     background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
+    overflow-y: auto;
 }
+
 
 .button-close {
     position: absolute;
@@ -358,9 +364,8 @@ border: 1px solid #ECECEC;
 
 /* Form in modal */
 
-.modal-h {
+.modal-title {
     position: relative;
-    margin: 40px 39px 12px 41px;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -369,9 +374,14 @@ border: 1px solid #ECECEC;
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--primary-text-color)
+        color: var(--primary-text-color);
+        margin-bottom: 12px;
+
 }
 
+.form-field {
+    margin-top: 4px;
+}
 .form-field-label {
     color: var(--secondary-text-color);
     margin-bottom: 4px;
@@ -396,7 +406,7 @@ border: 1px solid #ECECEC;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         outline: none;
-
+    margin-bottom: 20px;
 }
 
 .form-field-input:focus {
@@ -419,6 +429,7 @@ border: 1px solid #ECECEC;
 
 .form-field {
     position: relative;
+    margin-bottom: 10px;
 }
 
 
@@ -431,6 +442,41 @@ border: 1px solid #ECECEC;
 
 }
 
+.form-field-checkbox {
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    
+    width: 200px;
+        height: 50px;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        justify-content: center;
+        scale: 1;
+        transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+.submit-button:hover,
+.submit-button:focus {
+    transform: scale(1.1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 /* < !-- Блок Списку --> */
@@ -503,6 +549,7 @@ color: #757575;
 }
 
 .foto .tittle {
+    
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
