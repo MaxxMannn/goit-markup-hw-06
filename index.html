@@ -54,54 +54,8 @@
         <div class="hero-container">
                 <h2 class="hero-description">Ефективні рішення для вашого бізнесу</h2>
                 <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <div class="modal-container">
-                    <button data-modal-close class="button-close">
-                        <svg width="11" height="11">
-                        <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg></button>
-                        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-                        <form name="contact-form" autocomplete="on" novalidate>
-                            <label class="form-field-label" for="user-name">Ім'я</label>
-                            <div class="form-field">
-                                <input class="form-field-input" id="user-name" type="text" name="user-name">
-                                <svg class="form-field-icon" width="16" height="16">
-                                    <use href="./images/icons.svg#-iconusername"></use>
-                                </svg>
-                            </div>
-                            <label class="form-field-label" for="user-tel">Телефон</label>
-                            <div class="form-field">
-                                <input class="form-field-input" id="user-tel" type="tel" name="user-tel">
-                                <svg class="form-field-icon" width="16" height="16">
-                                    <use href="./images/icons.svg#-icontel"></use>
-                                </svg>
-                            </div>
-                            <label class="form-field-label" for="user-email">Пошта</label>
-                            <div class="form-field">
-                                <input class="form-field-input" id="user-email" type="email" name="user-email">
-                                <svg class="form-field-icon" width="16" height="16">
-                                    <use href="./images/icons.svg#-iconmail"></use>
-                                </svg>
-                            </div>
-                            <label class="form-field-label" for="user-comment">Коментар</label>
-                            <textarea class="form-field-textarea" name="user-comment" id="user-comment" placeholder="Введіть текст">
-                                
-                            </textarea>
-                             
-                            <div class="form-field-checkbox">
-                                <input id="terms-checkox" type="checkbox" name="terms-checkox">
-                                <label for="terms-checkox"><span class="confirm-text">Погоджуюся з розсилкою та приймаю</span> <a href="#" class="confirm-link">Умови договору</a></label>
-                                
-                            </div>
-
-                            <button class="submit-button" type="submit">Відправити</button>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-                        </div>   
-                    </div>    
+            </div>   
+        </div>    
                 </section>
     
         <!-- Блок Списку -->
@@ -422,6 +376,52 @@
         </div>
     </div>      
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <div class="modal-container">
+        <button data-modal-close class="button-close">
+            <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+            </svg></button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form name="contact-form" autocomplete="on" novalidate>
+                <label class="form-field-label" for="user-name">Ім'я</label>
+                <div class="form-field">
+                    <input class="form-field-input" id="user-name" type="text" name="user-name">
+                    <svg class="form-field-icon" width="16" height="16">
+                        <use href="./images/icons.svg#-iconusername"></use>
+                    </svg>
+                </div>
+                <label class="form-field-label" for="user-tel">Телефон</label>
+                <div class="form-field">
+                    <input class="form-field-input" id="user-tel" type="tel" name="user-tel">
+                    <svg class="form-field-icon" width="16" height="16">
+                        <use href="./images/icons.svg#-icontel"></use>
+                    </svg>
+                </div>
+                <label class="form-field-label" for="user-email">Пошта</label>
+                <div class="form-field">
+                    <input class="form-field-input" id="user-email" type="email" name="user-email">
+                    <svg class="form-field-icon" width="16" height="16">
+                        <use href="./images/icons.svg#-iconmail"></use>
+                    </svg>
+                </div>
+                <label class="form-field-label" for="user-comment">Коментар</label>
+                <textarea class="form-field-textarea" name="user-comment" id="user-comment" placeholder="Введіть текст">
+                    
+                </textarea>
+                 
+                <label class="confirm-container">
+                    <input type="checkbox" value="confirm" name="confirm" class="confirm-box"/>
+                    <span class="icon-confirm"></span>
+                    <span class="confirm-text">Погоджуюся з розсилкою та приймаю <a href="#" class="confirm-link">Умови договору</a></span>   
+                </label> 
+
+                <button class="submit-button" type="submit">Відправити</button>
+            </form>
+        </div>
+        </div>
+    </div>
 <script src="./js/modal.js"></script>
 <script>
     (() => {
