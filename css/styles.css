@@ -411,6 +411,7 @@ border: 1px solid #ECECEC;
         border-radius: 4px;
         outline: none;
     margin-bottom: 20px;
+    resize:none;
 }
 
 .form-field-input:focus {
